@@ -7,7 +7,7 @@ namespace UsefullExtensions
     /// These methods can be useful when working with complex object graphs
     /// and you want to eagerly load related entities.
     /// </summary>
-    public static class LinqExtensions
+    public static class EFIQueryableExtensions
     {
         public static IQueryable<TEntity> IncludeManyWithThenInclude<TEntity, TProperty>(
             [NotNull] this IQueryable<TEntity> source,
